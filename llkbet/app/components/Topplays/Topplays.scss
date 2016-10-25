@@ -1,0 +1,278 @@
+@charset "utf-8";
+$bgColor: #fafafa;
+$playNameColor: rgb(51,51,51);
+$playsGolds: rgb(255, 85, 105);
+$playAssoreColor: #ff5569;
+$playBssoreColor: #00d4c3;
+body {
+  background: $bgColor;
+}
+  .quizPlayersAndScore {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: (750rem/20);
+    height: (521rem/20);
+    .score {
+      position: absolute;
+      left: (65rem/20);
+      top: (54rem/20);
+      width: (620rem/20);
+      height: (49rem/20);
+      #playName {
+        position: absolute;
+        top: 0;
+        left: (8rem/20);
+        width: (608rem/20);
+        height: (18rem/20);
+        #playA {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: (20rem/20);
+          #playAName {
+            color: $playNameColor;
+            display: inline-block;
+          }
+          #playAScore {
+            color: $playsGolds;
+            display: inline-block;
+          }
+        }
+        #playB {
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: (20rem/20);
+          #playBName {
+            color: $playNameColor;
+            display: inline-block;
+          }
+          #playBScore {
+            color: $playsGolds;
+            display: inline-block;
+          }
+        }
+      }
+      #scoreA {
+        position: absolute;
+        left: 0;
+        top: (28rem/20);
+
+        width: (610rem/20);
+        height: (20rem/20);
+        border-top-left-radius: (10rem/20);
+        border-bottom-left-radius: (10rem/20);
+        background: $playAssoreColor;
+      }
+      #scoreB {
+        position: absolute;
+        right: 0;
+        top: (28rem/20);
+        width: (400rem/20);
+        height: (20rem/20);
+        border-top-right-radius: (10rem/20);
+        border-bottom-right-radius: (10rem/20);
+        background: $playBssoreColor;
+      }
+    }
+    .quizPlayers {
+      position: absolute;
+      top: (157rem/20);
+      left: (85rem/20);
+      width: (580rem/20);
+      height: (300rem/20);
+      #quizPlayersA {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: (200rem/20);
+        height: 100%;
+        #playersHeadA {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: (126rem/20);
+          height: (126rem/20);
+          border: 2px solid #e44c5e;
+          border-radius: 50%; //                  overflow: hidden;
+          div:nth-child(1) {
+            //display: none;
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            background: url("./img/gou2.png") no-repeat;
+            background-size: 100%;
+            left: (100rem/20);
+            top: (5rem/20);
+          }
+          div:nth-child(2) {
+            width: 100%;
+            height: 100%;
+            background: url("./img/bb.png") no-repeat;
+            background-size: 100%;
+            border-radius: 50%;
+          }
+        }
+        #playAinfo {
+          position: absolute;
+          top: (144rem/20);
+          left: 0;
+          width: (200rem/20);
+          height: (158rem/20);
+          #playersAName {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: (28rem/20);
+          }
+          #playAinfoLV {
+            position: absolute;
+            left: 50%;
+            top: (40rem/20);
+            transform: translateX(-50%);
+            width: (135rem/20);
+            height: (20rem/20);
+            p {
+              display: inline-block;
+            }
+            #playersAGrade {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: (55rem/20);
+              height: 100%;
+              font-size: (16rem/20);
+              color: white;
+              background: $playAssoreColor;
+              text-align: center;
+              border-radius: (10rem/20);
+            }
+            #playersArateofWin {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: (72rem/20);
+              height: 100%;
+              font-size: (16rem/20);
+              color: white;
+              background: $playAssoreColor;
+              text-align: center;
+              border-radius: (10rem/20);
+            }
+          }
+        }
+        #supportA {
+          position: absolute;
+          left: 0;
+          top: (95rem/20);
+          width: (200rem/20);
+          height: (60rem/20);
+          background: $playAssoreColor;
+          font-size: (24rem/20);
+          color: white;
+          text-align: center;
+          line-height: (60rem/20);
+          border-radius: (30rem/20);
+        }
+      }
+      #quizPlayersB {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: (200rem/20);
+        height: 100%;
+        #playersHeadB {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0;
+          width: (126rem/20);
+          height: (126rem/20);
+          border: 2px solid #00d4c3;
+          border-radius: 50%;
+          div:nth-child(1) {
+            //display: none;
+            position: absolute;
+            background: url("./img/gou1.png") no-repeat;
+            background-size: 100%;
+            width: 30%;
+            height: 30%;
+            left: (100rem/20);
+            top: (5rem/20);
+          }
+
+          div {
+            width: 100%;
+            height: 100%;
+
+            background: url("./img/aa.png") no-repeat;
+            background-size: 100% 100%;
+            border-radius:50%;
+          }
+        }
+        #playBinfo {
+          position: absolute;
+          top: (144rem/20);
+          left: 0;
+          width: (200rem/20);
+          height: (158rem/20);
+          #playersBName {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: (28rem/20);
+          }
+          #playBinfoLV {
+            position: absolute;
+            left: 50%;
+            top: (40rem/20);
+            transform: translateX(-50%);
+            width: (135rem/20);
+            height: (20rem/20);
+            p {
+              display: inline-block;
+            }
+            #playersBGrade {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: (55rem/20);
+              height: 100%;
+              font-size: (16rem/20);
+              color: white;
+              background: $playBssoreColor;
+              text-align: center;
+              border-radius: (10rem/20);
+            }
+            #playersBrateofWin {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: (72rem/20);
+              height: 100%;
+              font-size: (16rem/20);
+              color: white;
+              background: $playBssoreColor;
+              text-align: center;
+              border-radius: (10rem/20);
+            }
+          }
+        }
+        #supportB {
+          position: absolute;
+          left: 0;
+          top: (95rem/20);
+          width: (200rem/20);
+          height: (60rem/20);
+          background: $playBssoreColor;
+          font-size: (24rem/20);
+          color: white;
+
+          text-align: center;
+          line-height: (60rem/20);
+          border-radius: (30rem/20);
+        }
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+{
+  "name": "listViewShow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "start": "webpack-dev-server --progress --colors --port 9999 --inline --content-base"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "css": "^2.2.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.10.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.2",
+    "scss": "^0.2.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^1.16.1"
+  }
+}

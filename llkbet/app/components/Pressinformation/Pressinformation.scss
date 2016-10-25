@@ -1,0 +1,67 @@
+//下放信息1 开始页面
+#realTimeGradeInfo {
+  //display: none;
+
+  position: absolute;
+  left: 0;
+  top: (521rem/20);
+  width: (750rem/20);
+  height: (688rem/20);
+  #gradeWord {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: (28rem/20);
+    color: rgb(51,51,51);
+  }
+  #gradInfoWrap {
+    position: absolute;
+    width: 100%;
+    height: (150rem/20);
+    top: (80rem/20);
+    left: 50%;
+    transform: translateX(-50%);
+    & > div {
+      display: inline-block;
+    }
+    #playAGradeInfo {
+      position: absolute;
+      left: (100rem/20);
+      top: 0;
+      width: (130rem/20);
+      height: 100%;
+      font-size: (24rem/20);
+      color: rgb(255, 85, 105);
+      text-align: center;
+      p {
+        margin-bottom: (40rem/20);
+      }
+    }
+    #infoWord {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      font-size: (24rem/20);
+      color: rgb(51, 51, 51);
+      text-align: center;
+      p {
+        margin-bottom: (32rem/20);
+      }
+    }
+    #playBGradeInfo {
+      position: absolute;
+      right: (100rem/20);
+      top: 0;
+      width: (130rem/20);
+      height: 100%;
+      font-size: (24rem/20);
+      color: rgb(255, 85, 105);
+      text-align: center;
+      p {
+        margin-bottom: (40rem/20);
+      }
+    }
+  }
+}
